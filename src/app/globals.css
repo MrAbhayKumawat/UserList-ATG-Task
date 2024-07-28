@@ -1,22 +1,20 @@
-
 .loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 100vh;
 }
 
-.container {
-  margin-top: 20px;
-}
-
-.profile-page {
-  display: flex;
+.user-details-container {
+  position: fixed;
+  top: 30%;
+  right: 10%;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .profile-header {
-  margin-bottom: 20px;
+  width: "auto";
 }
 
 .job_post {
@@ -25,4 +23,23 @@
 
 .social-icon {
   margin-top: 5px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-header .MuiCardContent-root {
+  padding: 16px;
+}
+
+.MuiTypography-root {
+  margin: 8px 0;
 }

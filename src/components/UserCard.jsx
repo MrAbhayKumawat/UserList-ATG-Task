@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRouter } from 'next/navigation';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Avatar from '@mui/material/Avatar';
@@ -7,15 +6,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 
-const UserCard = ({ user }) => {
-    const router = useRouter();
+const UserCard = ({ user,onSelect }) => {
 
-    const handleViewDetails = () => {
-        router.push(`/users/${user.id}`);
-    };
+
 
     return (
-        <Card className="profile-header">
+        <Card className="profile-header" style={{width:"110%"}}>
             <CardContent>
                 <div className="row">
                     <div className="col-lg-4 col-md-4 col-12">
@@ -37,7 +33,7 @@ const UserCard = ({ user }) => {
                         </Typography>
                         <div className='fs-6 mt-3'>
                          
-                            <Button variant="contained" color="primary" onClick={handleViewDetails}>
+                            <Button variant="contained" color="primary"onClick={() => onSelect(user)}>
                                 View Details
                             </Button>
                         </div>
