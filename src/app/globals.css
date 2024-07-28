@@ -1,0 +1,28 @@
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.profile-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.job_post {
+  color: grey;
+}
+
+.social-icon {
+  margin-top: 5px;
+}
